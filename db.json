@@ -1,0 +1,18 @@
+{
+  "f1Cars": [
+    {
+      "id": 1,
+      "name": "Ferrari",
+      "image": "images/download.jpeg",
+      "description": "It is the oldest surviving and most successful Formula One team, having competed in every world championship since the 1950 Formula One season.",
+      "likes": 0
+    },
+    {
+      "id": 2,
+      "name": "Mercedes Benz",
+      "image": "images/download.jpeg",
+      "description": "Mercedes Benz car has the most reliable engine package on the grid and its power unit is vastly different from all the other teams ",
+      "likes": 0
+    }
+  ]
+}
