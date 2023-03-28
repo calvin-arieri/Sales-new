@@ -17,10 +17,29 @@ function displayProducts(cars){
         <span class = “likesCount”>${cars.likes}</span> likes
     </p>
     <button id=“likes”>Like</button>
+     <div id="button">
+    <button id="Delete">Delete</button>    
+  </div>
     `
+
+
+  products.querySelector('#Delete').addEventListener('click', () => {
+    products.remove()
+    deleteProduct(cars.id)
+  })
+
     document.querySelector("#displayProducts").appendChild(products);  
 
 }
+function deleteProduct(id) {
+    fetch(`http://localhost:3000/f1Cars/${id}`,{
+   method:'DELETE',
+    headers:{
+        'content-Type':'application/json'
+        }})
+        .then(res => res.json())
+        .then (cars => console.log(cars))
+} 
 
 document.querySelector('#ourform1').addEventListener('click', submitting());
 function submitting(e){
